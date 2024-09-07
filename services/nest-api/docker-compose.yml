@@ -1,0 +1,13 @@
+#version: '3.6'
+
+services:
+  nest-api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    ports:
+      - 4001:4001
+    command: npm run start
