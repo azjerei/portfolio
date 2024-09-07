@@ -1,0 +1,13 @@
+#version: '3.6'
+
+services:
+  next-app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    ports:
+      - 3002:3002
+    command: npm run dev
