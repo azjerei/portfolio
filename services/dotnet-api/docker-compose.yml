@@ -1,0 +1,9 @@
+#version: '3.6'
+
+services:
+  dotnet-api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 4001:8080
