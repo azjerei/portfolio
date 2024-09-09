@@ -30,7 +30,7 @@ This will start the service on port **4001**.
 ### Apps
 ---
 
-_Make sure that you have at least one of the above services running before starting any of the apps._
+>_Make sure that you have at least one of the above services running before starting any of the apps._
 
 #### Angular
 
