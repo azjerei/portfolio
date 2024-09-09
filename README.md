@@ -1,20 +1,65 @@
-# portfolio
-My portfolio
+# Christoffer's Portfolio
 
+Welcome to my portfolio. Within these code files I demonstrate the frameworks that I am fluent with. Though the code is designed to be simple, this is just a taste of my knowledge.
 
+Follow the steps below to get things running. Enjoy!
 
-QUOTES
+## Web
 
-Ceasing to do evil, Cultivating the good, Purifying the heart: This is the teaching of the Buddhas.
+A combination of backend services and frontend apps. You need to have **Docker** installed to be able to run these projects.
 
-If with a pure mind a person speaks or acts, happiness follows them like a never-departing shadow.
+### Services
+---
 
-All that we are is the result of what we have thought: it is founded on our thoughts and made up of our thoughts.
+#### .NET WebApi
 
-Quiet the mind and the soul will speak.
+Built with .NET Core 8, this service uses a simple setup to serve Buddhist quotes to the users.
 
-What you think, you become. What you feel, you attract. What you imagine, you create.
+To run, from project root: `docker compose up`
 
-Happiness will never come to those who fail to appreciate what they already have.
+This will start the service on port **4001** (8080 internally in container).
 
-You don't have a soul. You are a soul. You have a body.
+#### NestJS
+
+Built with NestJS using TypeScript, this service uses a single controller to serve Buddhist quotes to the user.
+
+To run, from project root: `docker compose up`
+
+This will start the service on port **4001**.
+
+### Apps
+---
+
+_Make sure that you have at least one of the above services running before starting any of the apps._
+
+#### Angular
+
+Built with Angular and TypeScript, this app will consume the quote served by the active service.
+
+To run, from project root: `docker compose up`
+
+This will start the app on port **4200**.
+
+#### NextJS
+
+Built with NextJS and TypeScript, this app will consume the quote served by the active service.
+
+To run, from project root: `docker compose up`
+
+This will start the app on port **3002**.
+
+#### ReactJS
+
+Built with ReactJS and TypeScript, this app will consume the quote served by the active service.
+
+To run, from project root: `docker compose up`
+
+This will start the app on port **3000**.
+
+#### Vue
+
+Built with Vue and TypeScript, this app will consume the quote served by the active service.
+
+To run, from project root: `docker compose up`
+
+This will start the app on port **3001**.
