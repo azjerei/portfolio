@@ -40,6 +40,12 @@ To run, from project root: `docker compose up`
 
 This will start the app on port **4200**.
 
+#### Kotlin
+
+Built with JavaFX using Kotlin, this app will consume the quote served by the active service.
+
+Due to the complexity of executing Java in Docker, this is not possible. The best way to run the app is to download IntelliJ and take it from there.
+
 #### NextJS
 
 Built with NextJS and TypeScript, this app will consume the quote served by the active service.
