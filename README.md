@@ -11,6 +11,14 @@ A combination of backend services and frontend apps. You need to have **Docker**
 ### Services
 ---
 
+#### Golang
+
+Built with Go, using the built-in net/http module to serve Buddhist quotes to the users.
+
+To run, from project root: `docker compose up`
+
+This will start the service on port **4001**.
+
 #### .NET WebApi
 
 Built with .NET Core 8, this service uses a simple setup to serve Buddhist quotes to the users.
