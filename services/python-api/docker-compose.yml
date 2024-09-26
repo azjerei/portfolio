@@ -1,0 +1,8 @@
+services:
+  python-api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 4001:5000
+    command: python -m flask --app main run --host=0.0.0.0
