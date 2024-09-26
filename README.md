@@ -11,14 +11,6 @@ A combination of backend services and frontend apps. You need to have **Docker**
 ### Services
 ---
 
-#### Golang
-
-Built with Go, using the built-in net/http module to serve Buddhist quotes to the users.
-
-To run, from project root: `docker compose up`
-
-This will start the service on port **4001**.
-
 #### .NET WebApi
 
 Built with .NET Core 8, this service uses a simple setup to serve Buddhist quotes to the users.
@@ -27,6 +19,14 @@ To run, from project root: `docker compose up`
 
 This will start the service on port **4001** (8080 internally in container).
 
+#### Golang
+
+Built with Go, using the built-in net/http module to serve Buddhist quotes to the users.
+
+To run, from project root: `docker compose up`
+
+This will start the service on port **4001**.
+
 #### NestJS
 
 Built with NestJS using TypeScript, this service uses a single controller to serve Buddhist quotes to the user.
@@ -34,6 +34,14 @@ Built with NestJS using TypeScript, this service uses a single controller to ser
 To run, from project root: `docker compose up`
 
 This will start the service on port **4001**.
+
+#### Python
+
+Built with Python and Flask, this service uses a single endpoint to serve Buddhist quotes to the user.
+
+To run, from project root: `docker compose up`
+
+This will start the service on port **4001** (5000 internally in container)
 
 ### Apps
 ---
@@ -61,6 +69,14 @@ Built with NextJS and TypeScript, this app will consume the quote served by the 
 To run, from project root: `docker compose up`
 
 This will start the app on port **3002**.
+
+#### Python
+
+Built with Python and the *request* module, this app will consume the quote served by the active service.
+
+To run, install python and from project root: `python main.py`
+
+This will display the quote in the python console.
 
 #### ReactJS
 
